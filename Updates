@@ -6,3 +6,4 @@ Added Files:
     Userdata.txt    >> For storing user's data like username and password(unencrypted)  
     Fintra Host.py  >> The main host file(features Sign up, Login and prompt with exit/quit command.)  
     Signup.py       >> Module for Sign up mechanism
+    __pycache__     >> Directory
