@@ -30,7 +30,7 @@ def signup():
     global uname, pwd, pwd2
     uname = input("Enter your username: ")
     pwd = getpass("Enter your password: ")
-    pwd2 = getpass("Re-enter your password: ")
+    pwd2 = getpass("Confirm password: ")
 
 def run():
     while True:
