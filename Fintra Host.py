@@ -31,7 +31,7 @@ def fintra():
 
         else: 
             print("\nLogin failed, wrong username or password :(\nPlease try again\n")
-            login()
+            fintra()
 
 sup = input('Enter s to sign up or l to login: ')
 if sup == 's':
