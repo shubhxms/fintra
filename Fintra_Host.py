@@ -1,5 +1,6 @@
 from getpass import getpass
 from Signup import *
+from database import *
 
 uname = pwd = None
 
