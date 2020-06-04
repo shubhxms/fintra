@@ -14,5 +14,11 @@ Added Files:
     None
 Edited Files:
     Signup.py       >> Added database creation function
-    Fintra_Host     >> To integrate with the database creation function
+    Fintra_Host     >> To integrate with the database creation function along with edits
 =====================================
+June 4, 2020[22:26:35(IST)]    Contributors: SirSnehGupta, DevShubhamShah
+Subject: Debugged Signup.py
+Added Files:
+    None
+Edited Files:
+    Signup.py       >> Added missing MySQL command
