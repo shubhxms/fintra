@@ -4,6 +4,15 @@ May 31, 2020[20:56:28(IST)]    Contributor: SirSnehGupta
 Subject: Basic structure for login and sign up.
 Added Files:
     Userdata.txt    >> For storing user's data like username and password(unencrypted)  
-    Fintra Host.py  >> The main host file(features Sign up, Login and prompt with exit/quit command.)  
+    Fintra Host.py  >> The host file(features Sign up, Login and prompt with exit/quit command.)  
     Signup.py       >> Module for Sign up mechanism
     __pycache__     >> Directory
+=====================================
+June 3, 2020                   Contributor: DevShubhamShah
+Subject: Database Creation
+Added Files:
+    None
+Edited Files:
+    Signup.py       >> Added database creation function
+    Fintra_Host     >> To integrate with the database creation function
+=====================================
