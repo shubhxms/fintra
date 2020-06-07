@@ -8,7 +8,7 @@ Added Files:
     Signup.py       >> Module for Sign up mechanism
     __pycache__     >> Directory
 =====================================
-June 3, 2020                   Contributor: DevShubhamShah
+June 3, 2020                   Contributor: devshubhamshah
 Subject: Database Creation
 Added Files:
     None
@@ -22,3 +22,11 @@ Added Files:
     None
 Edited Files:
     Signup.py       >> Added missing MySQL command
+
+=====================================
+June 5, 2020[00:02:41(IST)]    Contributors: devshubhamshah
+Subject: Save MySQL credentials
+Added Files:
+    None
+Edited Files:
+    Signup.py       >>  Added feature to save MySQL credentials
