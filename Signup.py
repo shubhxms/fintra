@@ -46,6 +46,12 @@ def db_creation():
     db_cursor.execute('use fintra')
     db_cmd = ('create table '+str(uname)+' (RENT INTEGER(20), FOOD INTEGER(20), CLOTHING INTEGER(20), TRAVEL INTEGER(20), ENTERTAINMENT INTEGER(20), Miscellaneous INTEGER(20))')
     db_cursor.execute(db_cmd)
+    file = open('Userdata.txt','a')
+    c = str(db_user + '\n')
+    d = str(db_password + '\n')
+    file.write(c)
+    file.write(d)
+
 
 def run():
     while True:
