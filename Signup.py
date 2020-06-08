@@ -16,16 +16,15 @@ uname = pwd = pwd2 = su = None
 def authenticate():
     if pwd == pwd2:
         global su
-        file = open('Userdata.txt','a')
-        a = (str(uname)+'\n')
-        b = (str(pwd)+'\n')
+        file = open('Userdata.py','a')
+        a = ('info['+"'"+str(uname)+"'"+'] = '+"'"+str(pwd)+"'"+'\n')
         file.write(str(a))
-        file.write(str(b))
         su = True
         print("Sign up Successful!\n")
 
     else:
         print("Password Mismatch detected, please try again.\n")
+        run()
 
 def signup():
     global uname, pwd, pwd2
@@ -55,3 +54,6 @@ def run():
         db_creation()
         if su == True:
             break
+
+if __name__ == '__main__':
+    run()

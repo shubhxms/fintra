@@ -1,11 +1,11 @@
 from getpass import getpass
 from Signup import *
-
+from Userdata import info 
 
 uname = pwd = None
 
 def fintra():
-    file = open('Userdata.txt','r')
+    file = open('Userdata.py','r')
 
     def login():
         global uname,pwd
@@ -14,11 +14,10 @@ def fintra():
         pwd = getpass("Enter your password: ")
     login()
 
-    a = file.readline()
-    b = file.readline()
+    a = info[uname]
 
     while True:
-        if a == (str(uname)+'\n') and b == (str(pwd)+'\n'):
+        if a == pwd:
             print('\nWelcome',uname+'!')
             while True:
                 inp = input('Fintra λ ')
