@@ -23,10 +23,11 @@ Added Files:
 Edited Files:
     Signup.py       >> Added missing MySQL command
 ====================================
-June 8, 2020[22:11:35(IST)]    Contributor:  SirSnehGupta
-Subject: Change in file handling mechanism + minor bug fixes
+June 8, 2020[22:41:06(IST)]    Contributor:  SirSnehGupta
+Subject: Change in file handling mechanism + minor bug fixes + code commenting
 Added Files: 
     None
 Edited Files:
-    Userdata.py     >> Converted from Usedata.txt, Python file for storing userdata
-    Signup.py       >> minor bug fixes + optimisation for handling python files
+    Userdata.py     >> Converted from Usedata.txt, Python file for storing userdata + comments 
+    Signup.py       >> minor bug fixes + optimisation for handling python files + comments
+    Fintra_Host.py  >> Comments

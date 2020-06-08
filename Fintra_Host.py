@@ -1,27 +1,27 @@
-from getpass import getpass
-from Signup import *
+from getpass import getpass     #for password input
+from Signup import *            
 from Userdata import info 
 
-uname = pwd = None
+uname = pwd = None              #initialising the required variables to use the in our functions
 
 def fintra():
-    file = open('Userdata.py','r')
+    file = open('Userdata.py','r')      #to read userdata for login
 
     def login():
-        global uname,pwd
+        global uname,pwd        
         print("Fintra Login")
         uname = input("Enter your username: ")
         pwd = getpass("Enter your password: ")
     login()
 
-    a = info[uname]
+    a = info[uname]             #storing the user's password
 
     while True:
         if a == pwd:
             print('\nWelcome',uname+'!')
             while True:
-                inp = input('Fintra λ ')
-                if inp == 'exit' or inp == 'quit':
+                inp = input('Fintra λ ')   #The Fintra prompt
+                if inp == 'exit' or inp == 'quit': 
                     endsess = True
                     break
             if endsess == True:
@@ -34,11 +34,11 @@ def fintra():
             fintra()
 
 sup = input('Enter s to sign up or l to login: ')
-if sup == 's':
+if sup == 's':      #structure for signing up
     greet()
     signup_greet()
     run()
     fintra()
 
-elif sup == 'l':
+elif sup == 'l':    #structure for logging in
     fintra()
