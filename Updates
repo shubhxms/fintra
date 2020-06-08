@@ -28,6 +28,6 @@ Subject: Change in file handling mechanism + minor bug fixes + code commenting
 Added Files: 
     None
 Edited Files:
-    Userdata.py     >> Converted from Usedata.txt, Python file for storing userdata + comments 
+    Userdata.py     >> Converted from Userdata.txt, Python file for storing userdata + comments 
     Signup.py       >> minor bug fixes + optimisation for handling python files + comments
     Fintra_Host.py  >> Comments
