@@ -1,6 +1,7 @@
 from getpass import getpass     #for password input
 from Signup import *            
 from Userdata import info 
+from fintra_commands import commands
 
 uname = pwd = None              #initialising the required variables to use the in our functions
 
@@ -24,6 +25,8 @@ def fintra():
                 if inp == 'exit' or inp == 'quit': 
                     endsess = True
                     break
+                else:
+                    commands(inp)
             if endsess == True:
                 print("Bye",uname+'!')
                 break
