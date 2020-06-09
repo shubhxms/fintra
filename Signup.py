@@ -1,4 +1,4 @@
-from getpass import getpass
+from getpass import getpass     #for password input
 from time import sleep
 import mysql.connector
 
@@ -11,21 +11,20 @@ def signup_greet():
     sleep(2.0)
 print()
 
-uname = pwd = pwd2 = su = None
+uname = pwd = pwd2 = su = None #initialising required variables for signup and to use them globally # su is used as an abbreviation for signup(helps to know whether the signing up process has terminated successfully)
 
-def authenticate():
+def authenticate(): 
     if pwd == pwd2:
         global su
-        file = open('Userdata.txt','a')
-        a = (str(uname)+'\n')
-        b = (str(pwd)+'\n')
+        file = open('Userdata.py','a')  #for appending the user's credentials
+        a = ('info['+"'"+str(uname)+"'"+'] = '+"'"+str(pwd)+"'"+'\n') #just a python syntax to store user data in the file
         file.write(str(a))
-        file.write(str(b))
         su = True
         print("Sign up Successful!\n")
 
     else:
         print("Password Mismatch detected, please try again.\n")
+        run()
 
 def signup():
     global uname, pwd, pwd2
@@ -33,7 +32,7 @@ def signup():
     pwd = getpass("Enter your password: ")
     pwd2 = getpass("Confirm password: ")
 
-def db_creation():
+def db_creation():      #essential for fintra services 
     db_user = input("Enter MYSQL username: ")
     db_password = getpass("Enter MYSQL password: ")
     db_login = mysql.connector.connect(user=db_user, password=db_password, host='127.0.0.1')
@@ -61,3 +60,6 @@ def run():
         db_creation()
         if su == True:
             break
+
+if __name__ == '__main__': #Required for the module's debugging
+    run()

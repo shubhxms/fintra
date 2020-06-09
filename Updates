@@ -22,6 +22,7 @@ Added Files:
     None
 Edited Files:
     Signup.py       >> Added missing MySQL command
+<<<<<<< HEAD
 
 =====================================
 June 5, 2020[00:02:41(IST)]    Contributors: devshubhamshah
@@ -30,3 +31,14 @@ Added Files:
     None
 Edited Files:
     Signup.py       >>  Added feature to save MySQL credentials
+=======
+====================================
+June 8, 2020[22:41:06(IST)]    Contributor:  SirSnehGupta
+Subject: Change in file handling mechanism + minor bug fixes + code commenting
+Added Files: 
+    None
+Edited Files:
+    Userdata.py     >> Converted from Userdata.txt, Python file for storing userdata + comments 
+    Signup.py       >> minor bug fixes + optimisation for handling python files + comments
+    Fintra_Host.py  >> Comments
+>>>>>>> 1c37ffa61c7c0a81d306cf5777fe5b91444bd101
