@@ -39,7 +39,9 @@ def fintra():
 sup = input('Enter s to sign up or l to login: ')
 if sup == 's':      #structure for signing up
     greet()
+    disapp()
     signup_greet()
+    disapp()
     run()
     fintra()
 

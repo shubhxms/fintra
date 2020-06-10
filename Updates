@@ -38,3 +38,12 @@ Edited Files:
     Userdata.py     >> Converted from Userdata.txt, Python file for storing userdata + comments 
     Signup.py       >> minor bug fixes + optimisation for handling python files + comments
     Fintra_Host.py  >> Comments
+====================================
+June 10, 2020[22:21:15(IST)]    Contributor: SirSnehGupta
+Subject: Printing and disappearing of string feature added + minor bug fix
+Added Files:
+    None
+Edited Files:
+    Signup.py       >> Added a function to disappear the printed statement
+    Fintra_Host.py  >> Used the above function in this file
+    fintra_commands.py >> minor bug fix

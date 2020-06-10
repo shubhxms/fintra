@@ -1,5 +1,5 @@
 from mysql.connector import *
-from signup import db_creation
+from Signup import db_creation
 
 
 def cat(cmd):       #cat for category

@@ -2,6 +2,11 @@ from getpass import getpass     #for password input
 from time import sleep
 from database import db_creation
 import mysql.connector
+import sys
+
+def disapp():                  #function to disappear the previous line and print new line
+    sys.stdout.write("\033[F") #to move print pointer to the previous line
+    sys.stdout.write("\033[K") #to clear the previous line
 
 def greet():
     print ("Welcome to Fintra, tailored by The GINISSI Inc.")
