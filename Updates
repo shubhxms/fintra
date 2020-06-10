@@ -45,4 +45,5 @@ Added Files:
     None
 Edited Files:
     Signup.py       >> Added a function to disappear the printed statement
-    Fintra_Host     >> Used the above function in this file + minor bug fix
+    Fintra_Host.py  >> Used the above function in this file
+    fintra_commands.py >> minor bug fix
