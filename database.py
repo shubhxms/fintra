@@ -16,7 +16,7 @@ def db_creation(uname):      #essential for fintra services
         db_cursor.execute("create database fintra")
     
     db_cursor.execute('use fintra')
-    db_cmd = ('create table '+str(uname)+' TYPE VARCHAR(20)')   
+    db_cmd = ('create table '+str(uname)+' (RENT INTEGER(20), FOOD INTEGER(20), CLOTHING INTEGER(20), TRAVEL INTEGER(20), ENTERTAINMENT INTEGER(20), Miscellaneous INTEGER(20))')   
 #    (RENT INTEGER(20), FOOD INTEGER(20), CLOTHING INTEGER(20), TRAVEL INTEGER(20), ENTERTAINMENT INTEGER(20), Miscellaneous INTEGER(20))
     db_cursor.execute(db_cmd)
     
@@ -27,3 +27,5 @@ def db_creation(uname):      #essential for fintra services
     file.write(d)
 
 
+if __name__ == '__main__':
+    db_creation(uname)

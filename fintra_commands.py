@@ -1,8 +1,9 @@
-from mysql.connector import *
+import mysql.connector
 from Signup import db_creation
 
 
-def cat(cmd):       #cat for category
+def cat(cmd):
+    cmd_split = cmd.split()       #cat for category
     if cmd_split[2] == '-n':    #n for new
         cat_name = input("Name new category: ")
         db_cmd == 'ALTER TABLE' + str(uname) + 'ADD COLUMN' + cat_name + 'INTEGER(20)' 
@@ -18,11 +19,15 @@ def estimate(cmd):
         db_cmd = ('update ' + uname + 'set' + 'estimated =' + mod_val + 'where something=' + cmd[1]) 
         #command not usable yet
     elif cmd_split[2] == '-v':
+        pass
         #for viewing
 
 def actual(cmd):
     cmd_split = cmd.split(' ')
-    if cmd_split
+    if cmd_split == 0:
+        pass
+    else:
+        pass
 
 
 

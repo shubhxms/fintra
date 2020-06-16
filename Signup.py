@@ -1,6 +1,6 @@
 from getpass import getpass     #for password input
 from time import sleep
-from database import db_creation
+from database import *
 import mysql.connector
 import sys
 
@@ -43,7 +43,7 @@ def run():
     while True:
         signup()
         authenticate()
-        db_creation()
+        db_creation(uname)
         if su == True:
             break
 
