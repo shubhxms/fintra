@@ -5,7 +5,7 @@ from Signup import db_creation
 def cat(cmd):
     cmd_split = cmd.split()       #cat for category
     if cmd_split[2] == '-n':    #n for new
-        cat_name = input("Name new category: ")
+        cat_name = cmd_split[1]
         db_cmd == 'ALTER TABLE' + str(uname) + 'ADD COLUMN' + cat_name + 'INTEGER(20)' 
     elif cmd_split[2] == '-e':      #e for exisitng
         cat_name = input("Name category: ")
@@ -41,3 +41,4 @@ def commands(cmd):
         estimate(cmd)
     elif cmd_split[0] == 'actu':
         actual(cmd)
+    db_

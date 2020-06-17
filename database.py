@@ -1,6 +1,8 @@
 from getpass import getpass
 import mysql.connector
 
+
+
 def db_creation(uname):      #essential for fintra services 
     
     db_user = input("Enter MYSQL username: ")
